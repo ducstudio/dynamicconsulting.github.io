@@ -7,7 +7,7 @@ name: Dynamic Consulting
 description: Life Coach
 
 #URL of site, include http://, do not include a trailing slash
-url: http://dynamicconsulting.com
+url: http://ducstudio.github.io/dynamicconsulting.github.io
 
 #files to exclude, array
 exclude: [ 'readme.md', 'php' ]
