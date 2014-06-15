@@ -4,7 +4,7 @@ Danny Chapman ducstudio.com
 
 /* Site */
 
-Last Update: 2014-06-14 20:24:01 -0400
+Last Update: 2014-06-14 20:25:34 -0400
 Generator: Jekyll
 Hosting: GitHub Pages
 Standards: HTML5, CSS3
