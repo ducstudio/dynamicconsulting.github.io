@@ -1,0 +1,15 @@
+---
+layout: none
+---
+
+/* People */
+Samantha Dye dynamicconsulting.com
+Danny Chapman ducstudio.com
+
+/* Site */
+
+Last Update: {{ site.time }}
+Generator: Jekyll
+Hosting: GitHub Pages
+Standards: HTML5, CSS3
+Components: HTML5 Resent, Foundation 5, Modernizr, jQuery

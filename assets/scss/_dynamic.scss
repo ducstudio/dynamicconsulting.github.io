@@ -1,0 +1,294 @@
+/*** Dynamic Consulting SCSS ***/
+
+/*** Colors ***/
+$dynamic-primary-color: #9dd348;
+$dynamic-secondary-color: #F0F885;
+$dynamic-body-content-color: #6d6e71;
+$dynamic-body-accent-color: #eee;
+$dynamic-body-background-color: #fff;
+
+/*** General ***/
+html, body {
+  font-family: 'Lato', sans-serif; font-weight: 300; color: $dynamic-body-content-color;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+ol, ul {margin: 1em 0 1em 1.2em;}
+dl {margin-bottom: 2em;}
+dd {margin: 0; padding: 0; line-height: 1em; span {color: $dynamic-primary-color;}}
+
+#content { padding: 0 0 2em 0; color: $dynamic-body-content-color;}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: $dynamic-body-content-color;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd {font-family: 'Open Sans', sans-serif; font-weight: 300; color: $dynamic-body-content-color;}
+
+h2 {
+  font-size: em-calc(36);
+  margin: 0 0 .75em 0;
+  color: $dynamic-primary-color;
+  font-weight: 300;
+  em {font-style: normal; font-weight: 500;  }
+}
+
+h3 {font-weight: bold; font-weight: 500; font-size: em-calc(18); margin: 0; }
+h4 {font-weight: 500; font-size: em-calc(26); color: $dynamic-body-content-color; line-height: 1.2em; margin-bottom: 0; padding-bottom: 0;}
+h5 {font-weight: 500; margin: .35em 0 1em 0; padding: 0; font-weight: 300; font-size: 1em;}
+
+/*** Logo / header ***/
+
+.header {
+  h1 {margin: 0; padding: 0;}
+}
+
+h1 a {
+  text-indent: -9999em;
+  white-space: nowrap;
+
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  margin: .75em auto 0 auto;
+  background: url(../../img/design/logo.png) top center no-repeat;
+  width: 60%;
+  height: 40px;
+  background-size: contain;
+  &:hover {opacity: .9;}
+  @media #{$small} {
+    width: 60%;
+    height: 80px;
+  }
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  h1 a {
+   background: url(../../images/design/logo.png) top center no-repeat;
+   width: 72%;
+   @media #{$small} {
+   height: 90px;
+   }
+   background-size: contain;
+   &:hover {opacity: .75;}
+  }
+}
+
+
+/*** Nav ***/
+nav {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: .9em;
+  margin-bottom: 1em;
+  ul li {
+    display: inline-block;
+    letter-spacing: 0.08em;
+    a {display: block; padding: .5em 3em;}
+  }
+}
+
+/*** Banner ***/
+
+#banner,
+#secondary-pitch,
+#recent-work,
+#testimonial,
+#about,
+#get-in-touch,
+#services {
+  padding: 4em 0;
+}
+
+#banner {
+  /* background: #249CBC; */
+  background: url(../../images/design/tulips.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 1.5em 0;
+  color: #fff;
+  text-align: center;
+  h2, p {color: #fff;}
+  h2 {padding: 2.5em 0; margin:0;}
+}
+
+/*** Secondary Pitch ***/
+
+#secondary-pitch {
+  text-align: center;
+  padding: 1.5em 0;
+  p {font-size: 1.3em; margin: 0 0 1em 0;}
+}
+
+/*** Recent Work ***/
+
+#services {
+  background: #547282;
+  color: #fff;
+  h2, h3, p {color: #fff;}
+  p {font-size: .85em;}
+}
+
+ul.pricing-table {
+  height: 100%;
+  border: none;
+  .title {
+    background-color: rgba(0,0,0,.3);
+    color: #fff;
+    font-weight: normal;
+    line-height: 1.3em;
+    @media #{$small} {height: 6em;}
+  }
+
+}
+
+
+/*** Testimonial ***/
+
+blockquote {
+  font-size: 1.6em;
+  color: #549DB0;
+}
+
+/*** About ***/
+
+#about {
+  background: #EFEFEF;
+  h2 {color: #547282;}
+
+}
+
+/*** Get in touch ***/
+
+#get-in-touch {
+  background: url(../../images/design/footer.jpg) top center no-repeat;
+  background-size: cover;
+  padding: 2em 0 18em 0;
+  h2 {color: #547282;}
+  a.button {
+    border: none;
+    background: #004574;
+    background: rgba(0,68,118,.8);
+    &:hover {background: rgba(0,68,118,1);}
+    color: #fff;
+    font-weight: normal;
+    }
+}
+
+/*** Scroll up ***/
+
+#scrollUp {
+	bottom:2.65em;
+	right: 2em;
+  padding: .5em;
+  background: rgba(255,255,255,.7);
+}
+
+
+/*** Footer ***/
+
+footer {
+  padding: 1em;
+  background: transparent;
+  ul {
+    margin: 0;
+    padding: 0 0 2em 0;
+    li {list-style: none;}
+  }
+}
+
+/*** Web font ***/
+
+@font-face {
+  font-family: 'dynamic';
+  src: url('../font/dynamic.eot?56278865');
+  src: url('../font/dynamic.eot?56278865#iefix') format('embedded-opentype'),
+       url('../font/dynamic.woff?56278865') format('woff'),
+       url('../font/dynamic.ttf?56278865') format('truetype'),
+       url('../font/dynamic.svg?56278865#dynamic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'dynamic';
+    src: url('../font/dynamic.svg?56278865#dynamic') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "dynamic";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-search:before { content: '\e801'; } /* '' */
+.icon-flashlight:before { content: '\e802'; } /* '' */
+.icon-heart:before { content: '\e803'; } /* '' */
+.icon-heart-empty:before { content: '\e804'; } /* '' */
+.icon-star:before { content: '\e805'; } /* '' */
+.icon-user:before { content: '\e806'; } /* '' */
+.icon-users:before { content: '\e807'; } /* '' */
+.icon-check:before { content: '\e808'; } /* '' */
+.icon-cancel:before { content: '\e809'; } /* '' */
+.icon-menu:before { content: '\e80a'; } /* '' */
+.icon-layout:before { content: '\e80b'; } /* '' */
+.icon-tag:before { content: '\e80c'; } /* '' */
+.icon-pencil:before { content: '\e80d'; } /* '' */
+.icon-feather:before { content: '\e80e'; } /* '' */
+.icon-tumblr:before { content: '\e80f'; } /* '' */
+.icon-pinterest:before { content: '\e810'; } /* '' */
+.icon-gplus:before { content: '\e811'; } /* '' */
+.icon-facebook:before { content: '\e812'; } /* '' */
+.icon-up-open-big:before { content: '\e813'; } /* '' */
+.icon-right-open-big:before { content: '\e814'; } /* '' */
+.icon-left-open-big:before { content: '\e815'; } /* '' */
+.icon-down-open-big:before { content: '\e816'; } /* '' */
