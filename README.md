@@ -1,1 +1,1 @@
-Personal site of Raph Majma. All opinions are my own.
+Business website for Dynamic Consulting
