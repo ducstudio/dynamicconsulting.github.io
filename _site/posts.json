@@ -1,13 +1,13 @@
 {
 	"name":"Dynamic Consulting",
 	"description":"Life Coach",
-	"url":"http://dynamicconsulting.com",
+	"url":"http://ducstudio.github.io/dynamicconsulting.github.io",
 	"updated":"",
 	"posts":[
 	{
 		"title":"Test",
 		"id":"/2014/05/14/test-post",
-		"url":"http://dynamicconsulting.com/2014/05/14/test-post/",
+		"url":"http://ducstudio.github.io/dynamicconsulting.github.io/2014/05/14/test-post/",
 		"description":"",
 		"tags": "Open Data",
 		"categories":"current",
