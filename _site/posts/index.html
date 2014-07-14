@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-<title>Dynamic Consulting</title>
+<title>Dynamic Coaching</title>
 
 <!-- Meta -->
 <!-- http://t.co/dKP3o1e -->
@@ -38,11 +38,7 @@
 
 
 <!-- Javascript -->
-<script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/vendor/modernizr.js"></script>
-
 <script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/vendor/jquery.js"></script>
-<script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/foundation/foundation.js"></script>
-<script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/foundation/foundation.equalizer.js"></script>
 <script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/vendor/jquery.scrollUp.js"></script>
 
 
@@ -73,12 +69,7 @@
 			});
 		});
 
-		// Destroy example
-		$(function(){
-			$('.destroy').click(function(){
-				$.scrollUp.destroy();
-			})
-		});
+
 
 	</script>
 
@@ -87,23 +78,17 @@
 <script>
 
 $(function(){$(".nav a.about").click(function(){$("html,body").animate({scrollTop:$("#about").offset().top},"500");return false})})
-
 $(function(){$(".nav a.services").click(function(){$("html,body").animate({scrollTop:$("#services").offset().top},"500");return false})})
-
 $(function(){$(".nav a.get-in-touch").click(function(){$("html,body").animate({scrollTop:$("#get-in-touch").offset().top},"500");return false})})
 
-
 </script>
 
-<script>
-$(document).foundation();
-</script>
 
 <!-- Type -->
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
 <!-- CSS -->
-<link rel='stylesheet' href='http://ducstudio.github.io/dynamicconsulting.github.io/assets/css/foundation.css'>
+<link rel='stylesheet' href='/assets/css/foundation.css'>
 
 </head>
 
@@ -117,7 +102,7 @@ $(document).foundation();
 <div class="header">
 <div class="row">
 <div class="small-12 small-centered large-9 columns">
-<h1 role="banner"><a href="/">Dynamic Consulting</a></h1>
+<h1 role="banner"><a href="/">Dynamic Coaching</a></h1>
 </div>
 </div>
 
@@ -125,10 +110,10 @@ $(document).foundation();
 <div class="small-12 small-centered large-12 columns">
 <nav role="menu">
 <ul class="nav">
-<li><a href="#services" class="services">Services</a></li>
-<li><a href="#about" class="about">About</a></li>
-<li><a href="#get-in-touch" class="get-in-touch">Get in Touch</a></li>
-<li><a href="#blog" class="blog">Blog</a></li>
+<li><a href="/#services" class="services">Services</a></li>
+<li><a href="/#about" class="about">About</a></li>
+<li><a href="/#get-in-touch" class="get-in-touch">Get in Touch</a></li>
+<li><a href="/posts/" class="blog">Blog</a></li>
 </ul>
 </nav>
 </div>
@@ -137,24 +122,32 @@ $(document).foundation();
 </div><!--/header -->
 
 
+<div id="blog">
 <div id="content">
+<div class="container">
 
-<h2>Writing</h2>
+<div class="row">
+<div class="small-12 columns">
 
-<ul class="posts">  
-  
-<li>  
-<a href="/2014/05/14/test-post/">  
-<span class="date">14 May 2014</span> 
+<h2>Blog Posts</h2>
 
-Test</a>  
-</li>  
-  
+<ul class="posts">
+
+<li>
+<span class="title"><a href="/2014/05/14/test-post/">Executive Coaching Case Study</span>
+<span class="date">14 May 2014</span>
+
+</a>
+</li>
+
 </ul>
 
+</div>
+</div>
 
+</div><!-- /container -->
 </div><!-- /content -->
-
+</div>
 
 
 
@@ -177,8 +170,17 @@ Test</a>
 
 <!-- Google Analytics -->
 
-<!-- iOS Orientation fix - Scott Jehl -->
-<script src="/js/ios-orientationchange-fix.js"></script>
+
+<!-- Foundation -->
+
+  <script src="/assets/js/foundation/foundation.js"></script>
+  <script src="/assets/js/foundation/foundation.equalizer.js"></script>
+  <!-- Other JS plugins can be included here -->
+
+  <script>
+    $(document).foundation();
+  </script>
+
 
 
 </body>

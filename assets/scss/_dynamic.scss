@@ -136,12 +136,13 @@ nav {
   text-align: center;
   padding: 1.5em 0;
   p {font-size: 1.3em; margin: 0 0 1em 0;}
+  strong {color: #D8555A;}
 }
 
 /*** Recent Work ***/
 
 #services {
-  background: #547282 url(../../images/design/watermark.png) center no-repeat;
+  background: #67BCD3 url(../../images/design/watermark.png) center no-repeat;
   background-size: contain;
   color: #fff;
 
@@ -150,25 +151,33 @@ nav {
 }
 
 ul.pricing-table {
-  height: 100%;
-  background: #547282 url(../../images/design/watermark.png) center no-repeat;
+  background: #fff;
   border: none;
+  min-height: 20em;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.15);
   .title {
-    background-color: rgba(0,0,0,.3);
+    background-color: #314E5D;
     color: #fff;
     font-weight: normal;
     line-height: 1.3em;
-    @media #{$small} {height: 6em;}
   }
+  li.bullet-item {line-height: 1.4em; }
 
 }
 
 
 /*** Testimonial ***/
 
+#testimonial, #blog {
+  background: #3E6081;
+  color: #fff;
+  p {color: #fff; color: rgba(255,255,255,.8);}
+}
+
 blockquote {
   font-size: 1.6em;
-  color: #549DB0;
+  color: #CAE9FB;
+  border-left: 1px solid rgba(255,255,255,.7);
 }
 
 /*** About ***/
@@ -188,13 +197,48 @@ blockquote {
   h2 {color: #547282;}
   a.button {
     border: none;
-    background: #004574;
-    background: rgba(0,68,118,.8);
+    background: #D8363E;
+    padding: 1.25em 1em;
+    background: rgba(216,54,62,.8);
     &:hover {background: rgba(0,68,118,1);}
     color: #fff;
     font-weight: normal;
     }
 }
+
+/*** Blog Posts ***/
+
+#blog {
+  padding: 2em 0;
+  h1, h2, h3, h4, h5, h6, a, ul, ol dl {color: #fff;}
+  a {color: #CAE9FB; &:hover {color: #fff;} }
+}
+
+span.title {font-size: 1.35em; display: block;}
+span.date {color: #fff; color: rgba(255,255,255,.65);}
+
+.post-meta {
+  border-top: 1px solid rgba(255,255,255,.2);
+  padding: 1em 0;
+  color: #fff;
+  color: rgba(255,255,255,.6);
+}
+
+ul.posts {
+  margin: 0 0 2em 0; padding: 0;
+  li {list-style-type: none; display: block; border-bottom: 1px solid rgba(255,255,255,.5); padding: .5em 0;}
+}
+
+/*** ABBR ***/
+
+abbr {
+  font-size: inherit;
+  font-style: inherit;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+}
+
 
 /*** Scroll up ***/
 

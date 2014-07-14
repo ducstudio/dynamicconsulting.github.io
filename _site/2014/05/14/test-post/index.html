@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-<title>Dynamic Consulting</title>
+<title>Dynamic Coaching</title>
 
 <!-- Meta -->
 <!-- http://t.co/dKP3o1e -->
@@ -38,11 +38,7 @@
 
 
 <!-- Javascript -->
-<script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/vendor/modernizr.js"></script>
-
 <script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/vendor/jquery.js"></script>
-<script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/foundation/foundation.js"></script>
-<script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/foundation/foundation.equalizer.js"></script>
 <script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/vendor/jquery.scrollUp.js"></script>
 
 
@@ -73,12 +69,7 @@
 			});
 		});
 
-		// Destroy example
-		$(function(){
-			$('.destroy').click(function(){
-				$.scrollUp.destroy();
-			})
-		});
+
 
 	</script>
 
@@ -87,23 +78,17 @@
 <script>
 
 $(function(){$(".nav a.about").click(function(){$("html,body").animate({scrollTop:$("#about").offset().top},"500");return false})})
-
 $(function(){$(".nav a.services").click(function(){$("html,body").animate({scrollTop:$("#services").offset().top},"500");return false})})
-
 $(function(){$(".nav a.get-in-touch").click(function(){$("html,body").animate({scrollTop:$("#get-in-touch").offset().top},"500");return false})})
 
-
 </script>
 
-<script>
-$(document).foundation();
-</script>
 
 <!-- Type -->
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
 <!-- CSS -->
-<link rel='stylesheet' href='http://ducstudio.github.io/dynamicconsulting.github.io/assets/css/foundation.css'>
+<link rel='stylesheet' href='/assets/css/foundation.css'>
 
 </head>
 
@@ -117,7 +102,7 @@ $(document).foundation();
 <div class="header">
 <div class="row">
 <div class="small-12 small-centered large-9 columns">
-<h1 role="banner"><a href="/">Dynamic Consulting</a></h1>
+<h1 role="banner"><a href="/">Dynamic Coaching</a></h1>
 </div>
 </div>
 
@@ -125,10 +110,10 @@ $(document).foundation();
 <div class="small-12 small-centered large-12 columns">
 <nav role="menu">
 <ul class="nav">
-<li><a href="#services" class="services">Services</a></li>
-<li><a href="#about" class="about">About</a></li>
-<li><a href="#get-in-touch" class="get-in-touch">Get in Touch</a></li>
-<li><a href="#blog" class="blog">Blog</a></li>
+<li><a href="/#services" class="services">Services</a></li>
+<li><a href="/#about" class="about">About</a></li>
+<li><a href="/#get-in-touch" class="get-in-touch">Get in Touch</a></li>
+<li><a href="/posts/" class="blog">Blog</a></li>
 </ul>
 </nav>
 </div>
@@ -142,27 +127,47 @@ $(document).foundation();
 
 
                 
+<div id="blog">
+<div id="content">
+<div class="container">
+
+<div class="row">
+<div class="small-12 columns">
+
+
 <article class="post-2014-05-14-test-post" class="post post-2014-05-14-test-post" role="main">
 
-<h2 class="title"><a href="http://ducstudio.github.io/dynamicconsulting.github.io/2014/05/14/test-post/">Test</a></h2>
+<h2 class="title"><a href="http://ducstudio.github.io/dynamicconsulting.github.io/2014/05/14/test-post/">Executive Coaching Case Study</a></h2>
 <p class="post-date"></p>
 
 <div class="entrybody">
 
-<h3>Danny Chapman is good</h3>
+<h3>Case Study</h3>
 
-<p>Thanks, Danny!</p>
+<p>Hello everyone. This is a great post on how I do what it is I do.</p>
 
-<p>This is a test. Me thanking Danny does not represent the views of this site.
-Any and all opinions made by Danny are his and his alone. Also, cool off on the
-Banana Republic. There are other stores, you know. </p>
+<p>Me sabbee plenty&quot;&mdash;grunted Queequeg, puffing away at his pipe and sitting up in bed.</p>
+
+<p>&quot;You gettee in,&quot; he added, motioning to me with his tomahawk, and throwing the clothes to one side. He really did this in not only a civil but a really kind and charitable way. I stood looking at him a moment. For all his tattooings he was on the whole a clean, comely looking cannibal. What&#39;s all this fuss I have been making about, thought I to myself&mdash;the man&#39;s a human being just as I am: he has just as much reason to fear me, as I have to be afraid of him. Better sleep with a sober cannibal than a drunken Christian.</p>
+
+<p>&quot;Landlord,&quot; said I, &quot;tell him to stash his tomahawk there, or pipe, or whatever you call it; tell him to stop smoking, in short, and I will turn in with him. But I don&#39;t fancy having a man smoking in bed with me. It&#39;s dangerous. Besides, I ain&#39;t insured.&quot;</p>
+
+<h3>Sub heading</h3>
+
+<ul>
+<li>List item</li>
+<li>List item</li>
+<li>List item</li>
+</ul>
+
+<p>Conclusion goes here.</p>
 
 
 </div><!-- .entrybody -->
 
 <div class="post-meta">
 <span class="entry-date">May 14, 2014</span>
-<span class="entry-author">by Raph Majma</span>
+<span class="entry-author">by Samantha Dye</span>
 </div>
 
 
@@ -178,6 +183,12 @@ Banana Republic. There are other stores, you know. </p>
 
 </ul>
 
+</div>
+
+</div>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -206,8 +217,17 @@ Banana Republic. There are other stores, you know. </p>
 
 <!-- Google Analytics -->
 
-<!-- iOS Orientation fix - Scott Jehl -->
-<script src="/js/ios-orientationchange-fix.js"></script>
+
+<!-- Foundation -->
+
+  <script src="/assets/js/foundation/foundation.js"></script>
+  <script src="/assets/js/foundation/foundation.equalizer.js"></script>
+  <!-- Other JS plugins can be included here -->
+
+  <script>
+    $(document).foundation();
+  </script>
+
 
 
 </body>

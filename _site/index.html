@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-<title>Dynamic Consulting</title>
+<title>Dynamic Coaching</title>
 
 <!-- Meta -->
 <!-- http://t.co/dKP3o1e -->
@@ -38,11 +38,7 @@
 
 
 <!-- Javascript -->
-<script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/vendor/modernizr.js"></script>
-
 <script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/vendor/jquery.js"></script>
-<script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/foundation/foundation.js"></script>
-<script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/foundation/foundation.equalizer.js"></script>
 <script src="http://ducstudio.github.io/dynamicconsulting.github.io/assets/js/vendor/jquery.scrollUp.js"></script>
 
 
@@ -73,12 +69,7 @@
 			});
 		});
 
-		// Destroy example
-		$(function(){
-			$('.destroy').click(function(){
-				$.scrollUp.destroy();
-			})
-		});
+
 
 	</script>
 
@@ -87,23 +78,17 @@
 <script>
 
 $(function(){$(".nav a.about").click(function(){$("html,body").animate({scrollTop:$("#about").offset().top},"500");return false})})
-
 $(function(){$(".nav a.services").click(function(){$("html,body").animate({scrollTop:$("#services").offset().top},"500");return false})})
-
 $(function(){$(".nav a.get-in-touch").click(function(){$("html,body").animate({scrollTop:$("#get-in-touch").offset().top},"500");return false})})
 
-
 </script>
 
-<script>
-$(document).foundation();
-</script>
 
 <!-- Type -->
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
 <!-- CSS -->
-<link rel='stylesheet' href='http://ducstudio.github.io/dynamicconsulting.github.io/assets/css/foundation.css'>
+<link rel='stylesheet' href='/assets/css/foundation.css'>
 
 </head>
 
@@ -117,7 +102,7 @@ $(document).foundation();
 <div class="header">
 <div class="row">
 <div class="small-12 small-centered large-9 columns">
-<h1 role="banner"><a href="/">Dynamic Consulting</a></h1>
+<h1 role="banner"><a href="/">Dynamic Coaching</a></h1>
 </div>
 </div>
 
@@ -125,10 +110,10 @@ $(document).foundation();
 <div class="small-12 small-centered large-12 columns">
 <nav role="menu">
 <ul class="nav">
-<li><a href="#services" class="services">Services</a></li>
-<li><a href="#about" class="about">About</a></li>
-<li><a href="#get-in-touch" class="get-in-touch">Get in Touch</a></li>
-<li><a href="#blog" class="blog">Blog</a></li>
+<li><a href="/#services" class="services">Services</a></li>
+<li><a href="/#about" class="about">About</a></li>
+<li><a href="/#get-in-touch" class="get-in-touch">Get in Touch</a></li>
+<li><a href="/posts/" class="blog">Blog</a></li>
 </ul>
 </nav>
 </div>
@@ -155,7 +140,7 @@ $(document).foundation();
 
 <div class="row">
 <div class="small-12 small-centered large-7 columns">
-<p>We listen.  We ask questions.  We hold you accountable.</p>
+<p>We listen. We ask questions. We hold you accountable.</p>
 
 <p>We partner with you to make the changes you want in your life,
 in your leadership, and in your organization. </p>
@@ -167,39 +152,6 @@ in your leadership, and in your organization. </p>
 
 </div>
 
-<!--
-
-<div class="recent-work">
-
-<div class="row">
-<div class="small-12 columns">
-<h2>Recent Work</h2>
-</div>
-</div>
-
-<div class="row">
-
-<div class="small-12 large-4 columns">
-<h3>Coaching Katie</h3>
-<p>Description</p>
-</div>
-
-<div class="small-12 large-4 columns">
-<h3>Real Colors w/ Love INC Staff</h3>
-<p>Description</p>
-</div>
-
-<div class="small-12 large-4 columns">
-<h3>Coaching Barry</h3>
-<p>Description</p>
-</div>
-
-</div>
-
-</div>
-
--->
-
 <div id="services">
 
 <div class="row">
@@ -210,36 +162,45 @@ in your leadership, and in your organization. </p>
 
 <div class="row" data-equalizer>
 
-<div class="small-12 large-3 columns ">
-<ul class="pricing-table data-equalizer-watch">
+<div class="small-12 large-3 columns">
+<ul class="pricing-table" data-equalizer-watch>
 <li class="title">Executive Coaching</li>
-<li class="description">Description</li>
+<li class="bullet-item">Partnering with you one-on-one to help you reach your full potential.</li>
+<li class="bullet-item">Helping you set the agenda and define the changes you want to make.</li>
+<li class="bullet-item">Holding you accountable to help you reach your goals.</li>
+</li>
 </ul>
 </div>
 
-<div class="small-12 large-3 columns data-equalizer-watch">
+<div class="small-12 large-3 columns">
 
-<ul class="pricing-table">
-<li class="title">Organizational Development Consulting</li>
-<li class="description">Description</li>
-</ul>
-
-</div>
-
-<div class="small-12 large-3 columns data-equalizer-watch">
-
-<ul class="pricing-table">
-<li class="title">Real Colors &copy; Personality Assessment</li>
-<li class="description">Description</li>
+<ul class="pricing-table" data-equalizer-watch>
+<li class="title">Organizational Development</li>
+<li class="bullet-item">Clarifying the vision &amp; goals of your organization.</li>
+<li class="bullet-item">Partnering with your organization to help it reach its full potential.</li>
+<li class="bullet-item">Providing ways for organization members to make effective contributions.</li>
 </ul>
 
 </div>
 
-<div class="small-12 large-3 columns data-equalizer-watch">
+<div class="small-12 large-3 columns">
 
-<ul class="pricing-table">
+<ul class="pricing-table" data-equalizer-watch>
 <li class="title">Group Facilitation</li>
-<li class="description">Description</li>
+<li class="bullet-item">Facilitating discussion to address key issues.</li>
+<li class="bullet-item">Clarifying each member&rsquo;s contribution.</li>
+<li class="bullet-item">Guiding your group in defining its unique identity &amp; purpose.</li>
+</ul>
+
+</div>
+
+<div class="small-12 large-3 columns">
+
+<ul class="pricing-table" data-equalizer-watch>
+<li class="title">Team Building</li>
+<li class="bullet-item">Providing a safe environment for open dialogue.</li>
+<li class="bullet-item">Developing your team's interpersonal awareness &amp; group awareness.</li>
+<li class="bullet-item">Guiding your team towards its full potential.</li>
 </ul>
 
 </div>
@@ -268,9 +229,9 @@ in your leadership, and in your organization. </p>
 <div class="row">
 <div class="small-12 large-8 large-centered columns">
 
-<h2>About Dynamic Consulting</h2>
+<h2>About Dynamic Coaching</h2>
 
-<p>Dynamic Consuling&rsquo;s founder Samantha Dye specializes in helping individuals and organizations reach their full potential.  Samantha has spent her career in diverse organizational situations.  Prior to founding Dynamic Coaching, Samantha worked at the <abbr>US</abbr> headquarters of International Relief & Development (IRD).  Samantha oversaw a large <abbr>USAID</abbr> agricultural project based in Afghanistan.  Prior to working for IRD, Samantha worked as international staff for InterVarsity/<abbr>USA</abbr>.  Samantha lived and worked for 6 years in South Africa, coaching university students on cultural and social issues.</p>
+<p>Dynamic Coaching&rsquo;s founder Samantha Dye specializes in helping individuals and organizations reach their full potential.  Samantha has spent her career in diverse organizational situations.  Prior to founding Dynamic Coaching, Samantha worked at the <abbr>US</abbr> headquarters of International Relief & Development (IRD).  Samantha oversaw a large <abbr>USAID</abbr> agricultural project based in Afghanistan.  Prior to working for IRD, Samantha worked as international staff for InterVarsity/<abbr>USA</abbr>.  Samantha lived and worked for 6 years in South Africa, coaching university students on cultural and social issues.</p>
 
 <p>Samantha earned her Master of Arts degree in Organizational Management &amp; Development and her Evidence-Based Coaching Certification from Fielding Graduate University.  Samantha is a Professional Certified Coach (<abbr>PCC</abbr>) through the International Coach Federation and is one of ten international partner coaches with the Center for Non-Profit Coaching (<abbr>CNPC</abbr>).</p>
 
@@ -330,8 +291,17 @@ in your leadership, and in your organization. </p>
 
 <!-- Google Analytics -->
 
-<!-- iOS Orientation fix - Scott Jehl -->
-<script src="/js/ios-orientationchange-fix.js"></script>
+
+<!-- Foundation -->
+
+  <script src="/assets/js/foundation/foundation.js"></script>
+  <script src="/assets/js/foundation/foundation.equalizer.js"></script>
+  <!-- Other JS plugins can be included here -->
+
+  <script>
+    $(document).foundation();
+  </script>
+
 
 
 </body>
