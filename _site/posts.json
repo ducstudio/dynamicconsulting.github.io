@@ -1,13 +1,13 @@
 {
-	"name":"Dynamic Consulting",
+	"name":"Dynamic Coaching",
 	"description":"Life Coach",
-	"url":"http://ducstudio.github.io/dynamicconsulting.github.io",
+	"url":"http://localhost:4000",
 	"updated":"",
 	"posts":[
 	{
 		"title":"Executive Coaching Case Study",
 		"id":"/2014/05/14/test-post",
-		"url":"http://ducstudio.github.io/dynamicconsulting.github.io/2014/05/14/test-post/",
+		"url":"http://localhost:4000/2014/05/14/test-post/",
 		"description":"",
 		"tags": "Life Coaching",
 		"categories":"current",
