@@ -37,8 +37,9 @@ a {
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd {font-family: 'Open Sans', sans-serif; font-weight: 300; color: $dynamic-body-content-color;}
 
 h2 {
-  font-size: em-calc(36);
+  @media #{$small} {font-size: em-calc(36);}
   margin: 0 0 .75em 0;
+  text-align: center;
   color: $dynamic-primary-color;
   font-weight: 300;
   em {font-style: normal; font-weight: 500;  }
@@ -54,6 +55,7 @@ h5 {font-weight: 500; margin: .35em 0 1em 0; padding: 0; font-weight: 300; font-
   @media #{$small} {
   position: fixed;
   top: 0;
+  padding: 0;
   background: #fff;
   background: rgba(255,255,255, .95);
   z-index: 500;
@@ -74,36 +76,18 @@ h1 a {
   overflow: hidden;
   display: block;
   margin: 0 auto 0 auto;
-  background: url(../../images/design/logo.png) top center no-repeat;
+  background: url(../../images/design/logo.png) center no-repeat;
   width: 60%;
-  height: 40px;
+  height: 55px;
   background-size: contain;
   &:hover {opacity: .9;}
   @media #{$small} {
-    width: 60%;
-    height: 70px;
+    width: 70%;
+    height: 88px;
   }
 }
 
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
-  h1 a {
-   background: url(../../images/design/logo.png) top center no-repeat;
-   width: 60%;
-   @media #{$small} {
-   height: 70px;
-   }
-   background-size: contain;
-   &:hover {opacity: .75;}
-  }
-}
 
 
 /*** Nav ***/
@@ -133,16 +117,25 @@ nav {
 
 }
 
+.navigation {
+  display: none;
+  @media #{$small} {display: block;}
+}
+
 #banner {
   /* background: #249CBC; */
   background: url(../../images/design/tulips.jpg) center center no-repeat;
   background-size: cover;
-  padding: 1.5em 0;
-  @media #{$small} {margin-top: 8.5em;}
+  padding: 2.5em 0;
+  margin-top: 0;
+  @media #{$small} {margin-top: 9em;}
   color: #fff;
   text-align: center;
   h2, p {color: #fff;}
-  h2 {padding: 2.5em 0; margin:0;}
+  h2 {
+    padding: .5em 0; margin:0;
+    @media #{$medium} {padding: 3.5em 0;}
+    }
 }
 
 /*** Secondary Pitch ***/
@@ -169,7 +162,7 @@ ul.pricing-table {
   background: #fff;
   border: none;
   span {display: block;}
-  min-height: 20em;
+  @media #{$small} {min-height: 20.5em;}
   -webkit-box-shadow: 0 0 5px rgba(0,0,0,.15);
   .title {
     background-color: #314E5D;
@@ -177,7 +170,7 @@ ul.pricing-table {
     font-weight: normal;
     line-height: 1.3em;
   }
-  li.bullet-item {line-height: 1.4em; }
+  li.bullet-item {line-height: 1.4em; &:last-child{border-bottom: none;}}
 
 }
 
@@ -192,7 +185,8 @@ ul.pricing-table {
 }
 
 blockquote {
-  font-size: 1.6em;
+  font-size: 1.2em;
+  @media #{$small} {font-size: 1.6em;}
   color: #3E6081;
   border-left: 1px solid rgba(255,255,255,.7);
 }
@@ -208,8 +202,8 @@ blockquote {
 
 #get-in-touch {
   background: url(../../images/design/footer.jpg) 0% 0% no-repeat;
-  background-size: cover;
-  padding: 9em 0 0em 0;
+  @media #{$medium} {background-size: cover;}
+  padding: 10em 0 0em 0;
   h2 {color: #547282;}
   a.button {
     border: none;
@@ -260,21 +254,34 @@ abbr {
 /*** Scroll up ***/
 
 #scrollUp {
-	bottom:2.65em;
-	right: 2em;
+	bottom: 1em;
+	right: 1em;
   padding: .5em;
   background: rgba(255,255,255,.7);
 }
 
 
+/*** Scroll ***/
+
+a#scrollUp {
+  display: none;
+  @media #{$medium} {display: block;}
+}
+
 /*** Footer ***/
 
 footer {
+     -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
   padding: 2em 0 1em 0;
   margin-top: 14em;
-  background: transparent;
-  background: rgba(255,255,255,.98);
+  background: #fff;
   span {padding-top: 2em; display: block; vertical-align: middle;}
+  text-align: center;
+  span {font-size: .85em; color: #777;}
   img {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -285,7 +292,8 @@ footer {
     padding: .5em;
     background: #fff;
     margin: 0 auto;
-    height: 80px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
