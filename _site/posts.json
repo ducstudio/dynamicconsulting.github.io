@@ -1,13 +1,13 @@
 {
 	"name":"Dynamic Coaching",
 	"description":"Life Coach",
-	"url":"http://localhost:8888",
+	"url":"http://dynamic.consulting",
 	"updated":"",
 	"posts":[
 	{
 		"title":"Executive Coaching Case Study",
 		"id":"/2014/05/14/test-post",
-		"url":"http://localhost:8888/2014/05/14/test-post/",
+		"url":"http://dynamic.consulting/2014/05/14/test-post/",
 		"description":"",
 		"tags": "Life Coaching",
 		"categories":"current",
