@@ -104,6 +104,9 @@ nav {
   margin-bottom: 1em;
   ul li {
     display: inline-block;
+    width: 50%;
+    font-size: .8em;
+    @media #{$small} {width: auto; font-size: 1em;}
     letter-spacing: 0.08em;
     a {display: block; padding: .5em 3em;}
   }
@@ -124,7 +127,7 @@ nav {
 }
 
 .navigation {
-  
+
   @media #{$small} {display: block;}
 }
 
