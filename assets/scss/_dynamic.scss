@@ -207,9 +207,9 @@ blockquote {
 /*** Get in touch ***/
 
 #get-in-touch {
-  background: url(../../images/design/footer.jpg) 0% 0% no-repeat;
+  background: url(../../images/design/footer.jpg) top center no-repeat;
   @media #{$medium} {background-size: cover;}
-  padding: 10em 0 0em 0;
+  padding: 10em 0 5em 0;
   h2 {color: #547282;}
   a.button {
     border: none;
