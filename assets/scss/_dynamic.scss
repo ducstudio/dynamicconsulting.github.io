@@ -87,7 +87,13 @@ h1 a {
   }
 }
 
-
+.header.skinny {
+  h1 a {height: 40px;}
+  nav {
+    margin-bottom: .5em;
+    ul li a {padding: .25em 3em; font-size: .8em;}
+  }
+}
 
 
 /*** Nav ***/

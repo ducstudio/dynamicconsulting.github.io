@@ -42,6 +42,26 @@
 <script src="{{ site.url }}/assets/js/vendor/jquery.scrollUp.js"></script>
 
 
+<script>
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".header");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 500) {
+            header.removeClass('normal').addClass("skinny");
+        } else {
+            header.removeClass("skinny").addClass('normal');
+        }
+    });
+});
+
+</script>
+
+
+
 	<script>
 
 		/* scrollUp Minimum setup */
@@ -99,7 +119,7 @@ $(function(){$(".nav a.get-in-touch").click(function(){$("html,body").animate({s
 
 
 
-<div class="header">
+<div class="header normal">
 <div class="row">
 <div class="small-12 small-centered large-9 columns">
 <h1 role="banner"><a href="{{ site.url }}">Dynamic Consulting</a></h1>
