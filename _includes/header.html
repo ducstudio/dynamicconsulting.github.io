@@ -38,6 +38,7 @@
 
 
 <!-- Javascript -->
+<script src="{{ site.url }}/assets/js/vendor/modernizr.js"></script>
 <script src="{{ site.url }}/assets/js/vendor/jquery.js"></script>
 <script src="{{ site.url }}/assets/js/vendor/jquery.scrollUp.js"></script>
 
@@ -97,6 +98,7 @@ $(function() {
 
 <script>
 
+$(function(){$("h1 a").click(function(){$("html,body").animate({scrollTop:$("#wrap").offset().top},"500");return false})})
 $(function(){$(".nav a.about").click(function(){$("html,body").animate({scrollTop:$("#about").offset().top},"500");return false})})
 $(function(){$(".nav a.services").click(function(){$("html,body").animate({scrollTop:$("#services").offset().top},"500");return false})})
 $(function(){$(".nav a.get-in-touch").click(function(){$("html,body").animate({scrollTop:$("#get-in-touch").offset().top},"500");return false})})
