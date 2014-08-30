@@ -18,14 +18,17 @@ html, body {
 }
 
 #wrap {
+  padding-top: 1em;
+}
+
+body.default.post #wrap {
   @media #{$small} { padding-top: 9.5em;}
 }
 
-body.posts #wrap, body.default.post-* {
-  padding-top: 0;
-}
 
-body.posts #wrap h2.title {text-align: left;}
+
+body.posts #wrap #blog h2 {
+}
 
 ol, ul {margin: 1em 0 1em 1.2em;}
 dl {margin-bottom: 2em;}
@@ -308,9 +311,9 @@ footer {
    -o-transform: translateZ(0);
    transform: translateZ(0);
   padding: 2em 0 1em 0;
-  margin-top: 14em;
+  margin-top: 2em;
   background: #fff;
-  span {padding-top: 2em; display: block; vertical-align: middle;}
+  span {padding-top: 2em;  vertical-align: middle;}
   text-align: center;
   span {font-size: .85em; color: #777;}
   img {
@@ -342,6 +345,10 @@ footer {
     font-size: .8em;
     li {list-style: none; display: inline-block;}
   }
+}
+
+body.default.post #wrap footer {
+  margin-top: 14em;
 }
 
 /*** Web font ***/
