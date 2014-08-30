@@ -21,9 +21,11 @@ html, body {
   @media #{$small} { padding-top: 9.5em;}
 }
 
-body.posts #wrap {
+body.posts #wrap, body.default.post-* {
   padding-top: 0;
 }
+
+body.posts #wrap h2.title {text-align: left;}
 
 ol, ul {margin: 1em 0 1em 1.2em;}
 dl {margin-bottom: 2em;}
