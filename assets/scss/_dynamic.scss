@@ -257,6 +257,8 @@ blockquote {
   padding: 2em 0;
   h1, h2, h3, h4, h5, h6, a, ul, ol dl {color: #fff;}
   a {color: #CAE9FB; &:hover {color: #fff;} }
+
+  img {width: 100%;}
 }
 
 span.title {font-size: 1.35em; display: block;}
