@@ -1,5 +1,5 @@
 ---
-title: I help you
+title: The Components of a Journey
 description:
 author: Samantha Dye
 layout: post
