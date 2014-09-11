@@ -57,11 +57,6 @@ Life is a journey.  There is a starting point, there are ending points, and ther
 I am a partner for you on that journey - no matter where you come from and no matter where you are going, I am a thought partner for you on the journey.  You determine where you are going.  I help you get from where you are to where you want to be.  
 
 
-Creating pathways,
-	finding space,
-		acknowledging cycles,
-			discovering connection
-				experiencing growth,
-						witnessing change
+Creating pathways, finding space, acknowledging cycles, discovering connection, experiencing growth, and witnessing change.
 
 We journey together to reach your full potential.
