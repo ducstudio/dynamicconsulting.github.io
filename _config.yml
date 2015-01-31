@@ -24,7 +24,3 @@ permalink: /:year/:month/:day/:title/
 #whether production or dev, minifies JS, bool
 production: true
 markdown: redcarpet
-
-#local build config
-highlighter: true
-safe: true

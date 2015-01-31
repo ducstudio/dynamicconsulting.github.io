@@ -1,7 +1,3 @@
----
-layout: none
----
-
 /* People */
 Samantha Dye dynamicconsulting.com
 Danny Chapman ducstudio.com
